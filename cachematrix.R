@@ -2,21 +2,21 @@
 
 ## Creates a special matrix object that can cache its inverse
 
-makeCacheMatrix <- function( m = matrix() ) {
+makeCacheMatrix <- function( mat = matrix() ) {
   
   ## Initialize the inverse property
   i <- NULL
   
   ## Method to set the matrix
   set <- function( matrix ) {
-    m <<- matrix
+    mat <<- matrix
     i <<- NULL
   }
   
   ## Method the get the matrix
   get <- function() {
     ## Return the matrix
-    m
+    mat
   }
   
   ## Method to set the inverse of the matrix
